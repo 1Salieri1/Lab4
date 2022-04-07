@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.IO;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            StreamWriter p = new StreamWriter(@"C:\Users\Galieri\Desktop\qq.txt");
+            float a, x, y;
+            p.WriteLine(" РЕЗУЛЬТАТЫ РАСЧЕТА");
+            for (a = 0.5f; a <= 2.0f; a += 0.5f)
+            {
+
+                p.WriteLine(" a=" + a);
+                for (x = 0; x <= 3.14; x += 0.087f)
+                {
+
+                    y = (float)((Math.Pow(Math.E, -xa))(Math.Sin(x)));
+                    p.WriteLine(" x= " + x + '\t' + " y= " + y);
+
+                }
+
+            }
+            p.Close();
+        }
+    }
+}
